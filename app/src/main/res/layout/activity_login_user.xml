@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginusuario"
+    tools:context=".loginUser">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="250px"
+            android:fontFamily="sans-serif"
+            android:text="Bienvenido"
+            android:textColor="@color/textBienvenida"
+            android:textSize="25dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="650px"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120px"
+            android:textColor="@color/white"
+            android:layout_marginLeft="100px"
+            android:fontFamily="sans-serif"
+            android:text="Iniciar sesión"
+            android:textSize="28dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:background="@drawable/inputsbackgroound"
+            android:layout_width="900px"
+            android:layout_marginTop="100px"
+            android:textColor="@color/white"
+            android:layout_marginLeft="90px"
+            android:layout_height="140px"
+            android:inputType="textEmailAddress"
+            android:hint="Introduce tu correo electrónico" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="90px"
+                android:layout_width="900px"
+                android:background="@drawable/inputsbackgroound"
+                android:id="@+id/password_input"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Introduce tu contraseña" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:textColor="@color/white"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="90px"
+            android:id="@+id/my_button"
+            android:layout_width="900px"
+            android:background="@drawable/backgroundiniciar"
+            android:layout_height="wrap_content"
+            android:text="iniciar Sesión" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="260px"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textColor="@color/textOlvido"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/my_button2"
+            android:layout_marginTop="100px"
+            android:layout_marginLeft="150px"
+            android:layout_width="800px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/bordesbuttom"
+            android:text="Crear cuenta nueva"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewHome"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-1980px"
+        android:orientation="vertical"
+        android:background="@color/barranavsupeior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToolsInc | Seccion de registro"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:paddingTop="55px"
+            android:paddingLeft="200px"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Barra de navegacion superior -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_marginTop="-1600px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/tittle">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/id_herramientas"
+            android:layout_width="400px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/backgroundiniciar"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="Herramientas" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/id_trabajadores"
+            android:layout_width="400px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/backgroundiniciar"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="Trabajadores" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320px"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/containerborder_inputs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80px"
+            android:layout_marginTop="80px"
+            android:fontFamily="sans-serif"
+            android:text="Ingrese los datos de la herramienta"
+            android:textColor="@color/textBienvenida"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="80px"
+            android:fontFamily="sans-serif"
+            android:text="Escriba el ID de la herramienta"
+            android:textColor="@color/textBienvenida"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID de la herramienta"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:padding="8dp"
+            android:background="@drawable/borderinputsinformation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:fontFamily="sans-serif"
+            android:text="Escriba el nombre de la herramienta"
+            android:textColor="@color/textBienvenida"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la herramienta"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:padding="8dp"
+            android:background="@drawable/borderinputsinformation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:fontFamily="sans-serif"
+            android:text="Escriba el color de la herramienta"
+            android:textColor="@color/textBienvenida"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color de la herramienta"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:padding="8dp"
+            android:background="@drawable/borderinputsinformation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="10px"
+            android:fontFamily="sans-serif"
+            android:text="Escriba el tipo de herramienta"
+            android:textColor="@color/textBienvenida"
+            android:textSize="15dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tipo de herramienta"
+            android:layout_margin="10dp"
+            android:textSize="13dp"
+            android:padding="8dp"
+            android:background="@drawable/borderinputsinformation"
+            />
+
+        <ImageView
+            android:id="@+id/testexample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="350px"/>
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/qr_generador"
+            android:layout_width="400px"
+            android:layout_marginLeft="340px"
+            android:layout_marginTop="30px"
+            android:layout_marginBottom="20px"
+            android:background="@drawable/backgroundiniciar"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="Generar codigo QR" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
