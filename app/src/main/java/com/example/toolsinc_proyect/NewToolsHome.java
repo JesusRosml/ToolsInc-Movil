@@ -47,6 +47,15 @@ public class NewToolsHome extends AppCompatActivity {
             }
         });
 
+        Button btnLector = findViewById(R.id.qr_lector);
+        btnLector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewToolsHome.this, LectorQR.class);
+                startActivity(intent);
+            }
+        });
+
         // Obtener las referencias de los elementos de la vista
         editTextName = findViewById(R.id.editTextName);
         editTextEmail = findViewById(R.id.editTextEmail);

@@ -44,6 +44,14 @@ public class NewHome extends AppCompatActivity {
             }
         });
 
+        Button btnLector = findViewById(R.id.qr_lector);
+        btnLector.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewHome.this, LectorQR.class);
+                startActivity(intent);
+            }
+        });
 
         getSupportActionBar().hide(); // Oculta el toolbar
 
@@ -72,10 +80,10 @@ public class NewHome extends AppCompatActivity {
                 }
 
                 // Generar el texto que se va a codificar en el QR
-                String qrText = "Nombre: " + name + "\n" +
-                        "Email: " + email + "\n" +
-                        "Teléfono: " + phone + "\n" +
-                        "Dirección: " + address;
+                String qrText = "ID de la herramienta: " + name + "\n" +
+                        "Nombre de la herramienta: " + email + "\n" +
+                        "Color de la herramienta: " + phone + "\n" +
+                        "Tipo de la herramienta: " + address;
 
                 // Generar el código QR a partir del texto
                 QRCodeWriter qrCodeWriter = new QRCodeWriter();

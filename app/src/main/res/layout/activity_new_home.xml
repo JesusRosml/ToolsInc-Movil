@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="-1980px"
+        android:layout_marginTop="-1960px"
         android:orientation="vertical"
         android:background="@color/barranavsupeior"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -32,39 +32,63 @@
 
     <!-- Barra de navegacion superior -->
 
-    <LinearLayout
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="200px"
-        android:layout_marginTop="-1600px"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/tittle">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="700dp">
 
-        <Button
-            android:textColor="@color/white"
-            android:id="@+id/id_herramientas"
-            android:layout_width="400px"
-            android:layout_marginLeft="100px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/backgroundiniciar"
-            android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:text="Herramientas" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/tittle"
+            android:layout_marginTop="50dp"
+            >
 
-        <Button
-            android:textColor="@color/white"
-            android:id="@+id/id_trabajadores"
-            android:layout_width="400px"
-            android:layout_marginLeft="100px"
-            android:layout_marginTop="30px"
-            android:background="@drawable/backgroundiniciar"
-            android:layout_height="wrap_content"
-            android:textSize="11sp"
-            android:text="Trabajadores" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/id_herramientas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundiniciar"
+                android:text="Herramientas"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/id_trabajadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundiniciar"
+                android:text="Trabajadores"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+            <Button
+                android:id="@+id/qr_lector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundiniciar"
+                android:text="Lector QR"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/id_almacen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundiniciar"
+                android:text="Almacen"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
 
     <LinearLayout
         android:layout_width="1000px"
